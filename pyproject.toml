@@ -1,0 +1,81 @@
+[project]
+name = "dhruvkit"
+version = "0.1.0"
+description = "A powerful Python scaffolding toolkit for rapid project creation with intelligent template system, modular add-ons, and beautiful CLI interface."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Dhruv Garg", email = "dhruvgarg2025@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = [
+    "scaffolding",
+    "template",
+    "cli",
+    "project-generator",
+    "fastapi",
+    "flask",
+    "boilerplate",
+    "mongodb",
+    "firebase",
+    "addons"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rich>=13.0.0",             # For beautiful terminal output
+    "python-decouple>=3.8",     # For handling .env files
+]
+
+[project.optional-dependencies]
+fastapi = [
+    "fastapi",
+    "uvicorn"
+]
+flask = [
+    "flask"
+]
+firebase = [
+    "firebase-admin"
+]
+mongodb = [
+    "pymongo",
+]
+
+[project.urls]
+Homepage = "https://github.com/dhruvgarg001/dhruvkit"
+Repository = "https://github.com/dhruvgarg001/dhruvkit"
+Issues = "https://github.com/dhruvgarg001/dhruvkit/issues"
+Documentation = "https://github.com/dhruvgarg001/dhruvkit"
+
+[project.scripts]
+dhruvkit = "dhruvkit.cli:main"
+dk = "dhruvkit.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dhruvkit"]
+
+[tool.hatch.build]
+include = [
+    "src/dhruvkit/templates/**",
+    "src/dhruvkit/license_templates/**",
+    "src/dhruvkit/commands/**"
+]

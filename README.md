@@ -2,7 +2,6 @@
 
 > A powerful Python scaffolding toolkit for rapid project creation with intelligent template system, modular add-ons, and beautiful CLI interface.
 
-[![PyPI version](https://img.shields.io/pypi/v/dhruvkit.svg)](https://pypi.org/project/dhruvkit/)
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](LICENSE)
 
@@ -309,4 +308,5 @@ Created by [Dhruv Garg](https://www.linkedin.com/in/dhruvgarg001/)
 ---
 
 <p align="center">Made with ❤️ and Python</p>
+
 

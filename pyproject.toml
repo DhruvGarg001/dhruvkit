@@ -1,6 +1,6 @@
 [project]
 name = "dhruvkit"
-version = "0.1.1"
+version = "0.1.2"
 description = "A powerful Python scaffolding toolkit for rapid project creation with intelligent template system, modular add-ons, and beautiful CLI interface."
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.9"
@@ -75,8 +75,5 @@ packages = ["src/dhruvkit"]
 
 [tool.hatch.build]
 include = [
-    "src/dhruvkit/templates/**",
-    "src/dhruvkit/license_templates/**",
-    "src/dhruvkit/commands/**"
-
+    "src/dhruvkit/**"
 ]
